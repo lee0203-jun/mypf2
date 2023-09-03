@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나스리뉴얼 서브</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullpage.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="icon" href="./img/favicon-16x16.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/7522b47724.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/jquery.fullpage.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  
+   
+   
+   <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                //options here
+                autoScrolling:true,
+                scrollHorizontally: true,
+                navigation: true,  //우측페이저유무
+		navigationPosition: 'right',
+        onLeave: function(){
+			$('.section [data-aos]').each(function(){
+				$(this).removeClass("aos-animate")
+			});
+		},
+		
+		afterLoad: function(){
+			$('.section.active [data-aos]').each(function(){
+				$(this).addClass("aos-animate")
+			});
+		}
+
+
+
+    
+              
+        
+            
+    
+            });
+        });
+
+       
+      
+        </script>
+        
+</head>
+<body>
+    <header>
+        <div class="headerWrap ">
+        <ul class="gnb_lf clearfix">
+            <li><a href="">NEW</a></li>
+            <li><a href="">PRODUCTS</a></li>
+            <li><a href="">BEST SELLERS</a></li>
+            <li><a href="">
+                FOUNDATION FINDER</a></li>
+        </ul>
+       
+        <div class="logo">
+            <a href="./index.html">
+            <img src="./img/nars-logo-black.png" alt="">
+        </a>
+        </div>
+        
+        <ul class="gnb_rg clearfix">
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </div>
+    </header>
+    <div id="fullpage">
+        <div class="section active"  id="section1">
+            <div class="mainImg" data-aos="fade-right">
+                <img src="./img/submain1.jpg" alt="">
+            </div>
+            <div class="subImg"></div>
+            <ul class="txtBox">
+                <li class="title">
+                    <a href="">
+                 <h1>블러쉬</h1>
+                </a></li>
+                <li class="subtitle">
+                    CHEEK TO CHIC
+                </li>
+                <li>
+                    <div class="tag clearfix">
+                        <span>#매트와 쉬머링 피니쉬</span>
+                        <span>#모든 피부타입 적합</span>
+                        <span>#덧바를수록 새로워진 피부를 느낄 있는 제품</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="tag2">
+                 <div class="tag2_1">       
+                <span>미세한 입자의 파우더는 부드럽고 블렌드가 가능한 텍스처로, 가장 많이 팔린<br> "오르가즘" 블러쉬를 포함하여 상징적인 색감을 표현 할 수 있는 실키한 매트<br>함과 은은하게 반짝이는 피니쉬를 연출해 줍니다. </span>
+            </div>
+            <div class="tag2_2">
+                <span>네츄럴하게 건강해 보이는 컬러로 안색을 살려 주며, 가장 또렷해 보이는 색<br>상을 가볍게 발라주면 자연스럽게 볼에 살짝 홍조가 띄는 듯한 표현을 줄 수<br> 있습니다.</span>
+            </div>
+            </div>
+            </li>
+            </ul>
+        </div>
+        <div class="section" id="section2">
+            <div class="mainImg" >
+                <img src="./img/submain2.jpg" alt="">
+            </div>
+            <div class="subImg" ></div>
+            <ul class="txtBox" data-aos="fade-right">
+                <li class="title">
+                    <a href="">
+                 <h1>소프트 매트 컴플리트 파운데이션</h1>
+                </a></li>
+                <li class="subtitle">
+                    REACH TOTAL
+                    MATTISFACTION
+                </li>
+                <li>
+                    <div class="tag clearfix">
+                        <span>#12시간 지속되는 편안한 밀착력</span>
+                        <span>#자연스러운 결점 커버 효과</span>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="tag2">
+                 <div class="tag2_1">       
+                <span>나스만의 독자적인 포뮬러로 쉽게 블렌딩할 수 있습니다. 번들거림 방지에 도움을 주고 묻어남이 적은 포뮬러가 가볍게 밀착되어 오랫동안 아름다운 소프트 매트 룩을 유지하는데 도움을 줍니다. </span>
+            </div>
+            <div class="tag2_2">
+                <span>피부 결점을 자연스럽게 가려줍니다. 하이드라매트 밸런싱 컴플렉스가 함유되어 선사하는 피부 케어 효과로 생기 넘치는 건강한 피부톤을 표현할 수 있습니다.</span>
+            </div>
+            </div>
+            </li>
+            </ul>
+        </div>
+        <div class="section" id="section3">
+            <div class="mainImg">
+                <img src="./img/submain3.jpg" alt="">
+            </div>
+            <div class="subImg"></div>
+            <ul class="txtBox">
+                <li class="title">
+                    <a href="">
+                 <h1>립스틱</h1>
+                </a></li>
+                <li class="subtitle">
+                    NO RULES. JUST LIPS.
+                </li>
+                <li>
+                    <div class="tag clearfix">
+                        <span>#오래 지속되는 매트-새틴 컬러.</span>
+                        <span>#모든 스킨톤 사용 가능</span>
+                        <span>#쉬어/새틴/매트 3가지 피니쉬</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="tag2">
+                 <div class="tag2_1">       
+                <span>나스의 창립자이자 크리에이티브 디렉터 프랑수아 나스의 진보된 뷰티 철학에서 영감을 받아 새롭게 탄생한 립스틱 라인업을 선보입니다. 데일리 MLBB부터 존재감을 드러내는 볼드한 컬러까지, 트렌드를 리드하는 스타일과 진보된 포뮬러의 나스 립스틱으로 오늘 가장 돋보이는나의 모습을 자유롭게 드러내 보세요. </span>
+            </div>
+            <div class="tag2_2">
+                <span>네츄럴하게 건강해 보이는 컬러로 안색을 살려 주며, 가장 또렷해 보이는 색상을 가볍게 발라주면 자연스럽게 볼에 살짝 홍조가 띄는 듯한 표현을 줄 수 있습니다.</span>
+            </div>
+            </div>
+            </li>
+            </ul>
+        </div>
+        <div class="section" id="section4">
+            <div class="mainImg">
+                <img src="./img/submain4.jpg" alt="">
+            </div>
+            <div class="subImg"></div>
+            <ul class="txtBox">
+                <li class="title">
+                    <a href="">
+                 <h1>듀오 아이섀도우</h1>
+                </a></li>
+                <li class="subtitle">
+                    SHOW YOUR COLORS
+                </li>
+                <li>
+                    <div class="tag clearfix">
+                        <span>#하이 임팩트 컬러</span>
+                        <span>#4가지 컬러와 피니쉬의 조합</span>
+                        <span>#아티스트 팔레트로커스터마이징</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="tag2">
+                 <div class="tag2_1">       
+                <span>한 눈에 사로잡는 강렬함, 단 한번의 터치로 즉각적인 만족감을 느껴보세요. 업그레이드된 다양한 아이섀도우로 본연의 색을 찾고 나 자신에 대해, 나만의 개성을 마음껏 표현해보세요. 완전히 새로워진 패키지와 포뮬러. 부드러운 매트와 광택이 나는 새틴부터 일렉트로닉 팝 컬러와 글리터한 메탈릭 제품까지, 각 제품의 마무리감은 다양한 연출과 함께 소프트함을 선사합니다. </span>
+            </div>
+            <div class="tag2_2">
+                <span>혁신적인 리퀴드 바인딩 시스템으로 캡처한 퓨어 피그먼트가 단 한 번의 터치만으로도풍성하고 강렬한 컬러를 선사합니다.모두의 시선을 사로잡는, 한 눈에 사로잡는 강렬함을 표현해 보세요.</span>
+            </div>
+            </div>
+            </li>
+            </ul>
+        </div>
+    </div>
+  
+</body>
+</html>

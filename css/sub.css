@@ -1,0 +1,381 @@
+body{
+    font-family: 'Inter', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Libre Baskerville', serif;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header{
+        position:fixed;
+        height: 68px;
+        display:flex;
+        width: 100%;
+        background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+        z-index:9;
+        text-align:center;
+        color: #000;
+        padding: 20px 0 0 0;
+    }
+
+    .gnb_lf{
+    width: 610px;
+display: flex;
+position: absolute;
+top: 40px; left: 40px;
+}
+
+.gnb_lf>li{
+    margin-right: 20.8px;
+}
+
+.gnb_lf li a{
+    height: 22px;
+    display: block;
+    color: #fff;
+    font:1rem/22px 'Nanum Myeongjo';
+    font-weight: 800;
+}
+
+header>a{
+   display: block;
+}
+
+
+header .logo{
+    width: 147px; height: 61px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+header .logo>a>img{
+   width: 147px; height: 61px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+}
+
+
+.gnb_rg{
+    /* width: 312px;
+    height: 21px; */
+    /* display: flex; */
+    position: absolute;
+    right: 0;
+    top: 35px;
+    /* justify-content: space-between; */
+}
+
+.gnb_rg>li{
+    margin-right: 50px;
+    float: left;
+}
+
+.gnb_rg>li>a{
+    display: block;
+}
+
+.gnb_rg>li>a>i{
+    color: white;
+    font-size: 25px;
+}
+
+.gnb_rg>li>a .fa-cart-shopping:hover{
+    animation: fa-bounce 2s infinite;
+}
+
+.gnb_rg>li>a .fa-magnifying-glass:hover{
+    animation: fa-beat 1s infinite ease-in-out;
+}
+
+
+
+
+#section1,
+	#section2,
+	#section3,
+	#section4{
+    width: 100%;
+		background-size: cover;
+		background-attachment: fixed;
+        position: relative;
+	}
+
+	#section1{
+		background: url(../img/sub_main1.jpg) no-repeat center/cover;
+	}
+	
+	#section2{
+        background: url(../img/sub_main2.jpg) no-repeat center/cover;
+		padding: 0% 0 0 0;
+	}
+	#section3{
+        background: url(../img/sub_main3.jpg) no-repeat center/cover;
+		padding: 0% 0 0 0;
+	}
+
+     #section4{
+        background: url(../img/sub_main4.jpg) no-repeat center/cover;
+		padding: 0% 0 0 0;
+     }
+
+     /* 공통 */
+     .section .mainImg{
+        width: 652px;
+        height: 434px;
+        overflow: hidden;
+        z-index: 1;
+        position: absolute;
+
+     }
+
+     .section .subImg{
+        width: 506px;
+        height: 547px;
+     position: absolute;
+
+     }
+
+     .section .mainImg>img{
+        width: 652px;
+        height: 434px;
+        transition: all .5s;
+     }
+
+
+     .section .mainImg:hover>img{
+   scale: 1.2;
+     }
+     
+     .section .txtBox{
+        width: 561px;
+        height: 484px;
+        position: absolute;
+       
+     }
+
+     .txtBox .title a h1{
+        font: 32px 'Noto Sans KR';
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+     }
+
+     .txtBox .subtitle{
+        font: 28px  'Libre Baskerville';
+        font-weight: 600;
+        text-align: center;
+margin-bottom: 15px;
+     }
+
+     .txtBox .tag{
+        width: 344px;
+        height: 55px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 111px;
+     }
+
+     .txtBox .tag span{
+        font: 18px 'Noto Sans KR';
+        color: #fff;
+        margin-right: 5px;
+        line-height: 32px;
+        font-weight: 400;
+     }
+
+     .txtBox .tag2{
+        width: 555px;
+        height: 84px;
+        text-align: left;
+     }
+
+     .txtBox .tag2 .tag2_1{
+        width: 100%;
+        margin-bottom: 30px;
+     }
+
+     .txtBox .tag2 .tag2_2{
+        width: 100%;
+     }
+
+     .txtBox .tag2 span{
+        font: 18px 'Noto Sans KR';
+        color: #fff;
+     }
+
+     #fp-nav ul li a span, .fp-slidesNav ul li a span {
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      height: 4px;
+      width: 4px;
+      border: 0;
+      background: #fff;
+      left: 50%;
+      top: 50%;
+      margin: -2px 0 0 -2px;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+  }
+
+     /* 공통끝 */
+
+
+/* #section1 */
+
+     #section1 .mainImg{
+        top: 28%;
+    right: 13%;
+     }
+
+    
+
+     #section1 .subImg{
+    background: url(../img/subimg1.jpg) no-repeat center/cover;
+     top: 20%;
+     right: 0;
+     }
+
+     #section1 .txtBox{
+        top: 32%;
+        left: 5%;
+     }
+
+     #section1 .txtBox .title a h1{
+       color: #ff9c43;
+     }
+
+     #section1 .txtBox .subtitle{
+       color: #ff9c8e;
+     }
+
+     /* #section1 끝 */
+
+     /* #section2 시작 */
+
+     #section2 .mainImg{
+        top: 28%;
+    left: 13%;
+     }
+
+    
+
+     #section2 .subImg{
+    background: url(../img/subimg2.jpg) no-repeat center/cover;
+     top: 20%;
+     left: 0;
+     }
+
+     #section2 .txtBox{
+        top: 32%;
+        right: 5%;
+     }
+
+     #section2  .txtBox .tag {
+        width: 465px;
+        height: 55px;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-left: 48px;
+    }
+
+    #section2 .txtBox .title a h1{
+        color: #F4D5B9;
+      }
+ 
+      #section2 .txtBox .subtitle{
+        color: #FEE2D5;
+      }
+ 
+     
+
+
+     /* #section2 끝 */
+
+
+     /* #section3 시작 */
+     
+     #section3 .mainImg{
+        top: 28%;
+    right: 13%;
+     }
+
+    
+
+     #section3 .subImg{
+    background: url(../img/subimg3.jpg) no-repeat center/cover;
+     top: 20%;
+     right: 0;
+     }
+
+     #section3 .txtBox{
+        top: 32%;
+        left: 5%;
+     }
+
+     #section3 .txtBox .tag {
+        width: 420px;
+        height: 55px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 70px;
+    }
+
+    
+    #section3 .txtBox .title a h1{
+        color: #ffa6b6;
+      }
+ 
+      #section3 .txtBox .subtitle{
+        color: #b91c35;
+      }
+    
+     /* #section3 끝 */
+
+
+     
+     /* #section4 시작 */
+
+     #section4 .mainImg{
+        top: 28%;
+    left: 13%;
+     }
+
+    
+
+     #section4 .subImg{
+    background: url(../img/subimg4.jpg) no-repeat center/cover;
+     top: 20%;
+     left: 0;
+     }
+
+     #section4 .txtBox{
+        top: 32%;
+        right: 5%;
+     }
+
+     #section4 .txtBox .title a h1{
+        color: #C88C42;
+      }
+ 
+      #section4 .txtBox .subtitle{
+        color: #8F5A33;
+      }
+
+     /* #section4 끝 */
